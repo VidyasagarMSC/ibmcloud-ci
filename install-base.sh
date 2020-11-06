@@ -90,6 +90,10 @@ chmod +x /usr/local/bin/kubectl
 echo ">> helm"
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 
+echo ">> Minio client"
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
+chmod +x mc
+
 # NVM for Node.JS
 # apk add nodejs npm
 # npm config delete prefix
